@@ -10,7 +10,7 @@ from einops.einops import rearrange
 _CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(os.path.join(_CURRENT_DIR, "LoFTR"))
 
-from src.loftr import LoFTR, default_cfg
+from loftr import LoFTR, default_cfg
 
 DEFAULT_CFG = copy.deepcopy(default_cfg)
 DEFAULT_CFG["coarse"]["temp_bug_fix"] = True
